@@ -1,0 +1,32 @@
+.chipsets:
+input strobe
+input data
+clock c
+input oe
+4094 shifter
+output o0
+output o1
+output o2
+output o3
+output o4
+output o5
+output o6
+output o7
+output qs
+output qsp
+
+.links:
+strobe:1 shifter:1
+data:1 shifter:2
+c:1 shifter:3
+oe:1 shifter:15
+o0:1 shifter:4
+o1:1 shifter:5
+o2:1 shifter:6
+o3:1 shifter:7
+o4:1 shifter:14
+o5:1 shifter:13
+o6:1 shifter:12
+o7:1 shifter:11
+qs:1 shifter:9
+qsp:1 shifter:10

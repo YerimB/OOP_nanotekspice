@@ -1,0 +1,19 @@
+#8-Channel Data Selector
+
+.chipsets:
+input   a
+input   b
+input   c
+input  inhibit
+input   oe
+output  s
+4512    selector
+
+.links:
+selector:10     inhibit:1
+selector:11     a:1
+selector:12     b:1
+selector:13     c:1
+selector:15     oe:1
+
+selector:14     s:1
